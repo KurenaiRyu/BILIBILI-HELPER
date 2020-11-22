@@ -1,0 +1,10 @@
+version: '3.7' # specify docker-compose version
+
+services:
+  bilibili-helper:
+    image: bilibili-helper:1.1.8
+    restart: no
+    volumes:
+      - ./logs:/bilibili-helper/logs
+    //按照 DEDEUSERID SESSDATA BILI_JCT SCKEY 的顺序填写
+#    command: DEDEUSERID SESSDATA BILI_JCT SCKEY
